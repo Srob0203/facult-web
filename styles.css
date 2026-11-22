@@ -162,14 +162,16 @@ button:focus-visible {
     padding: clamp(28px, 5vw, 56px);
 }
 
-.course-list {
+.course-list,
+.research-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
     margin-top: 26px;
 }
 
-.course-card {
+.course-card,
+.research-card {
     padding: 22px 24px;
     border: 1px solid var(--line);
     border-left: 4px solid var(--orange);
@@ -177,13 +179,16 @@ button:focus-visible {
     background: white;
 }
 
-.course-card h3 {
+
+.course-card h3,
+.research-card h3 {
     margin: 0 0 6px;
     color: var(--navy);
     font-size: 1.1rem;
 }
 
-.course-card p {
+.course-card p,
+.research-card p {
     margin: 0;
     color: var(--muted);
 }
@@ -295,7 +300,8 @@ footer {
         padding: 28px 24px;
     }
 
-    .course-list {
+    .course-list,
+    .research-list {
         grid-template-columns: 1fr;
     }
 
